@@ -11,5 +11,4 @@ public class HotelApplication {
 	}
 
 
-	//Mi primer commit
 }
