@@ -1,6 +1,6 @@
 package edu.TdeA.hotel;
 
-import edu.TdeA.hotel.entities.Habitaciones;
+import edu.TdeA.hotel.entities.Habitacion;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
@@ -19,9 +19,9 @@ public class HotelApplication {
 
 	@GetMapping("/test")
 	public String test() {
-		Habitaciones habitaciones = new Habitaciones();
-		habitaciones.setTipoHabitacion("Lujosa");
-		return habitaciones.getTipoHabitacion();
+		Habitacion habitacion = new Habitacion();
+		habitacion.setTipoHabitacion("Lujosa");
+		return habitacion.getTipoHabitacion();
 	};
 
 	public static void main(String[] args) {
