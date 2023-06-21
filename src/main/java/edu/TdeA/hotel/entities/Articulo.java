@@ -34,7 +34,4 @@ public class Articulo implements Serializable {
     @JoinColumn(name = "articulo_habitacion_id", nullable = false)
     private Habitacion habitacion;
 
-    //Ensayo
-
-
 }
