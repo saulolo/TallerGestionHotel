@@ -4,7 +4,6 @@ import edu.TdeA.hotel.entities.Empleado;
 import edu.TdeA.hotel.repositories.EmpleadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,9 +31,13 @@ public class EmpleadoService {
         return false;
     }
 
-    public Empleado deleteEmpleado(Long id) {
+    public boolean deleteEmpleado(Long id) {
         empleadoRepository.deleteById(id);
-        return new Empleado();
+        if (getEmpleadoById(id)!=null) {
+            return false;
+        }
+        return true;
     }
 
 }
+

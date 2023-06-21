@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
 @SpringBootApplication (exclude = {SecurityAutoConfiguration.class})
 public class HotelApplication {
 
 	@GetMapping("/hello")
 	public String GetSaludar() {
-		return "Hola mundo...Saldremos vivos de esta...";
+		return "Hola mundo...Saldremos vivos de esta...sisisi";
 	};
 
 	@GetMapping("/test")
