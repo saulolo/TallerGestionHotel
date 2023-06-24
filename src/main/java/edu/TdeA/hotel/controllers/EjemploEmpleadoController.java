@@ -17,14 +17,20 @@ public class EjemploEmpleadoController {
     @Autowired
     private EmpleadoService empleadoService;
 
-    @GetMapping({"/Empleados","/VerEmpleados"})
+    @GetMapping({"/","/VerEmpleados"})
     public String viewEmpleados(Model model) {
         List<Empleado> empleadoList = empleadoService.getAllEmpleados();
         model.addAttribute("emplist", empleadoList);
         return "VerEmpleados";
     }
 
-    //terminar los métodos de guardar, editar y eliminat empleados aqui en el controlador
+
+    //Quiede en min 43
+
+
+
+
+    //terminar los métodos de guardar, editar y eliminar empleados aqui en el controlador
 
 
 }
