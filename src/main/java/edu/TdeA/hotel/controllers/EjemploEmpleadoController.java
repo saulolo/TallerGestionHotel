@@ -25,10 +25,6 @@ public class EjemploEmpleadoController {
     }
 
 
-    //Quiede en min 43
-
-
-
 
     //terminar los métodos de guardar, editar y eliminar empleados aqui en el controlador
 
